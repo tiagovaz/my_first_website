@@ -207,24 +207,9 @@ This returns **all** elements with that class, not just one.
 | Uniqueness | Must be unique on page | Can be reused many times |
 | Per element | Only ONE id | MULTIPLE classes allowed |
 | CSS selector | `#` (hash) | `.` (dot) |
-| Specificity | **High** (1,0,0) | **Low** (0,1,0) |
 | Best for | Single unique elements | Groups of similar elements |
 | JS method | `getElementById()` | `getElementsByClassName()` |
 | URL anchors | Yes — `href="#id"` | No |
-
-### CSS Specificity — Why It Matters
-
-When multiple CSS rules target the same element, **specificity** decides the winner. Here's the hierarchy from strongest to weakest:
-
-```
-!important         →  ∞         (avoid this!)
-Inline styles      →  1,0,0,0
-#id selectors      →  0,1,0,0   ← HIGH
-.class selectors   →  0,0,1,0   ← LOW
-element selectors  →  0,0,0,1
-```
-
-> **Warning:** Avoid overusing `id` selectors in CSS — high specificity makes styles hard to override later.
 
 ### The Analogy
 
@@ -431,13 +416,3 @@ Use both `id` and `class` to build a simple blog page:
   <p class="copyright">© 2026</p>
 </footer>
 ```
-
-### Your Tasks
-
-1. Create 3 blog post cards
-2. Style `.post` with borders & padding
-3. Style `.tag` with colored badges
-4. Use `id` to style the unique sections
-5. Add a `.post-featured` modifier class
-6. Make the nav links change color on hover
-7. **Bonus:** Add a `.dark-mode` class to `<body>` and restyle everything
