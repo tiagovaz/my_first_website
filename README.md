@@ -1,6 +1,6 @@
 # HTML Classes & IDs
 
-**Frontend Development · Vanier College · Winter 2026 **
+**Frontend Development · Vanier College · Winter 2026**
 
 ---
 
