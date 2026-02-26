@@ -11,8 +11,7 @@ Each step tells you exactly what to change and where. Work through them in order
 ## Before You Start
 
 1. Make sure `index.html` and `style.css` are in the same folder.
-2. Open `index.html` in your browser to see the starting page.
-3. Keep the browser open. After every step, save your file and refresh the browser to check your work.
+2. Open `index.html` in your VSCode with the Live Server extension and check the page in your browser.
 
 ---
 
