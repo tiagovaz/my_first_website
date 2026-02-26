@@ -1,6 +1,6 @@
 # Assignment: Customize Cafe Montreal
 
-**Frontend Development Workshop — Hands-on Practice**
+**Frontend Development - Vanier College - Winter 2026**
 
 You have received two files: `index.html` and `style.css`. They form a single-page website for a fictional cafe. Your job is to modify both files by following the steps below.
 
