@@ -1,23 +1,147 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Montreal</title>
 
-<html>
-    <title>This is my first fancy website</title>
-    <body>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <h1>I'll be talking about cats</h1>
-        <p>cats are fun.</p>
+  <!-- 
+    NAVIGATION — id="site-nav"
+    Each link uses href="#section-id" to jump to a section below.
+  -->
+  <nav id="site-nav">
+    <a href="#hero" class="nav-logo">Cafe Montreal</a>
+    <ul class="nav-links">
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-        <h1>I will not be talking about dogs</h1>
-        <p>dogs aren't fun.</p>
 
-        <h1>I will not be talking about sharks</h1>
-        <p>sharks aren't fun neither.</p>
-        
-        <pre>
-The old pond.
-A frog jumped in.
-Plop!
-        </pre>
+  <!-- HERO — id="hero" — the nav logo href="#hero" points here -->
+  <section id="hero">
+    <h1>Cafe Montreal</h1>
+    <p class="subtitle">Artisan coffee and fresh pastries in the Plateau.</p>
+    <a href="#menu" class="btn btn-gold">See Our Menu</a>
+  </section>
 
-    </body>
+
+  <main>
+
+    <!-- MENU — id="menu" — the nav link href="#menu" points here -->
+    <section id="menu" class="section">
+      <h2 class="section-title">Our Menu</h2>
+
+      <div class="card-grid">
+
+        <!-- Each card reuses: class="card", "card-img", "card-title", etc. -->
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Cappuccino">
+          <div class="card-body">
+            <h3 class="card-title">Classic Cappuccino</h3>
+            <p class="card-text">Rich espresso with steamed milk and foam.</p>
+            <span class="price">$4.50</span>
+            <span class="tag tag-popular">Popular</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Croissant">
+          <div class="card-body">
+            <h3 class="card-title">Butter Croissant</h3>
+            <p class="card-text">Flaky golden pastry, baked every morning.</p>
+            <span class="price">$3.75</span>
+            <span class="tag tag-classic">Classic</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&q=80" alt="Matcha latte">
+          <div class="card-body">
+            <h3 class="card-title">Matcha Latte</h3>
+            <p class="card-text">Ceremonial matcha with oat milk and honey.</p>
+            <span class="price">$5.25</span>
+            <span class="tag tag-new">New</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT — id="about" — the nav link href="#about" points here -->
+    <section id="about" class="section">
+      <h2 class="section-title">Our Story</h2>
+      <p>
+        Founded in 2018 on Rue Saint-Denis, Cafe Montreal started with one
+        espresso machine and a lot of heart. We source beans from small farms,
+        roast them in-house, and bake all our pastries from scratch before sunrise.
+      </p>
+      <ul class="feature-list">
+        <li class="feature-item">Single-origin beans roasted weekly</li>
+        <li class="feature-item">All pastries baked fresh before 6 AM</li>
+        <li class="feature-item">Free Wi-Fi and plenty of outlets</li>
+        <li class="feature-item">Dog-friendly patio in summer</li>
+      </ul>
+    </section>
+
+
+    <!-- REVIEWS — id="reviews" — the nav link href="#reviews" points here -->
+    <section id="reviews" class="section section-dark">
+      <h2 class="section-title">What People Say</h2>
+
+      <div class="review-grid">
+
+        <!-- Each review reuses class="review-card" -->
+        <div class="review-card">
+          <p class="review-text">
+            "Best cappuccino in the Plateau. The croissants are dangerously good."
+          </p>
+          <span class="review-author">-- Marie-Claire D.</span>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "Great atmosphere for remote work. The matcha latte is my new addiction."
+          </p>
+          <span class="review-author">-- Thomas R.</span>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            "Finally a cafe that takes both coffee AND food seriously. Will be back!"
+          </p>
+          <span class="review-author">-- Sofia L.</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT — id="contact" — the nav link href="#contact" points here -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Find Us</h2>
+      <p>4521 Rue Saint-Denis, Montreal, QC H2J 2L4</p>
+      <p>Mon-Fri: 6:30 AM - 7 PM  |  Sat-Sun: 7:30 AM - 6 PM</p>
+      <p>hello@cafemontreal.ca  |  (514) 555-0142</p>
+      <br>
+      <a href="#hero" class="btn btn-gold">Back to Top</a>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER — id="site-footer" -->
+  <footer id="site-footer">
+    <p>2026 Cafe Montreal  |  <a href="#hero">Back to top</a></p>
+  </footer>
+
+</body>
 </html>
